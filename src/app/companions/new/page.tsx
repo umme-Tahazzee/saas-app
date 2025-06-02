@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const NewComapnion = () => {
+const NewCompanion = () => {
   return (
-    <div>NewComapnion</div>
+    <div>NewCompanion</div>
   )
 }
+
+export default NewCompanion

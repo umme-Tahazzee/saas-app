@@ -1,8 +1,7 @@
-
-import { Button } from "@/components/ui/button";
 import CompanionsCard from './../components/CompanionsCard';
 import Companionslist from "@/components/Companionslist";
 import CTA from "@/components/CTA";
+import { recentSessions } from '@/constants';
 
 
 
@@ -19,7 +18,6 @@ export default function Home() {
           subject="Science"
           duration={45}
           color="#E5D0FF"
-
         />
         <CompanionsCard
           id="456"
@@ -39,7 +37,10 @@ export default function Home() {
 
       </section>
       <section className="home-section">
-        <Companionslist />
+        <Companionslist 
+        title ="Recently completed lessons"
+        companions ={recentSessions} 
+        classNames="w-2/3 max-lg:w-full "/>
         <CTA />
       </section>
     </main>
